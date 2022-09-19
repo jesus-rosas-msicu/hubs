@@ -20,16 +20,18 @@ ContentMenuButton.propTypes = {
   active: PropTypes.bool
 };
 
+
 export function ObjectsMenuButton(props) {
   return (
     <ContentMenuButton {...props}>
       <ObjectsIcon />
       <span>
-        <FormattedMessage id="content-menu.objects-menu-button" defaultMessage="Objects" />
+        <FormattedMessage id="content-menu.objects-menu-button" defaultMessage="Objects Available" />
       </span>
     </ContentMenuButton>
   );
 }
+
 
 export function PeopleMenuButton(props) {
   return (

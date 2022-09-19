@@ -11,10 +11,10 @@ export default {
 const infoMessages = [
   { heading: "Tip:", message: "Press the Q & E keys to turn left and right." },
   {
-    heading: "What's New?",
+    heading: "Working to create a great metaverse",
     message: (
       <>
-        You can now set the default locale in your preferences.{" "}
+        You can now set the default language in your preferences.{" "}
         <a href="#" target="_blank">
           Read More
         </a>
@@ -23,4 +23,4 @@ const infoMessages = [
   }
 ];
 
-export const Base = () => <LoadingScreen message="Loading objects 2/14" infoMessages={infoMessages} />;
+export const Base = () => <LoadingScreen message="Loading land please wait 2/14" infoMessages={infoMessages} />;

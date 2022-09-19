@@ -19,7 +19,7 @@ function InvitePopoverContent({ url, embed, inviteRequired, fetchingInvite, invi
       ) : (
         <>
           <CopyableTextInputField
-            label={<FormattedMessage id="invite-popover.room-link" defaultMessage="Room Link" />}
+            label={<FormattedMessage id="invite-popover.room-link" defaultMessage="Land Link" />}
             value={url}
             buttonPreset="accent3"
           />

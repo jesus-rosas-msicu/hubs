@@ -9,7 +9,7 @@ import { AuthContextProvider } from "./react-components/auth/AuthContext";
 import "./react-components/styles/global.scss";
 import { ThemeProvider } from "./react-components/styles/theme";
 
-registerTelemetry("/home", "Hubs Home Page");
+registerTelemetry("/home", "Polywinx");
 
 const store = new Store();
 window.APP = { store };

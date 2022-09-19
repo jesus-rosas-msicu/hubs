@@ -100,12 +100,12 @@ export function HomePage() {
           <Column padding gap="xl" className={styles.card}>
             <img src={configs.image("landing_rooms_thumb")} />
             <h3>
-              <FormattedMessage id="home-page.rooms-title" defaultMessage="Instantly create rooms" />
+              <FormattedMessage id="home-page.rooms-title" defaultMessage="Instantly create lands" />
             </h3>
             <p>
               <FormattedMessage
                 id="home-page.rooms-blurb"
-                defaultMessage="Share virtual spaces with your friends, co-workers, and communities. When you create a room with Hubs, you’ll have a private virtual meeting space that you can instantly share <b>- no downloads or VR headset necessary.</b>"
+                defaultMessage="Share virtual lands with your friends, co-workers, and communities. When you create a land with Polywinx, you’ll have a private virtual meeting space that you can instantly share <b>- no downloads or VR headset necessary.</b>"
                 values={{ b: wrapInBold }}
               />
             </p>
@@ -139,7 +139,7 @@ export function HomePage() {
       {sortedPublicRooms.length > 0 && (
         <Container className={styles.roomsContainer}>
           <h3 className={styles.roomsHeading}>
-            <FormattedMessage id="home-page.public--rooms" defaultMessage="Public Rooms" />
+            <FormattedMessage id="home-page.public--rooms" defaultMessage="Public Lands" />
           </h3>
           <Column grow padding className={styles.rooms}>
             <MediaGrid center>
@@ -161,7 +161,7 @@ export function HomePage() {
       {sortedFavoriteRooms.length > 0 && (
         <Container className={styles.roomsContainer}>
           <h3 className={styles.roomsHeading}>
-            <FormattedMessage id="home-page.favorite-rooms" defaultMessage="Favorite Rooms" />
+            <FormattedMessage id="home-page.favorite-rooms" defaultMessage="Favorite Lands" />
           </h3>
           <Column grow padding className={styles.rooms}>
             <MediaGrid center>
@@ -183,7 +183,7 @@ export function HomePage() {
       <Container>
         <Column center grow>
           <Button thin preset="landing" as="a" href="/link">
-            <FormattedMessage id="home-page.have-code" defaultMessage="Have a room code?" />
+            <FormattedMessage id="home-page.have-code" defaultMessage="Have a land code?" />
           </Button>
         </Column>
       </Container>

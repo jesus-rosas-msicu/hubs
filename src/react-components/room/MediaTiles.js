@@ -215,7 +215,7 @@ export function MediaTile({ entry, processThumbnailUrl, onClick, onEdit, onShowS
           entry.project_id && (
             <TileAction
               onClick={onEdit}
-              title={intl.formatMessage({ id: "media-tile.action.edit-scene", defaultMessage: "Edit scene" })}
+              title={intl.formatMessage({ id: "media-tile.action.edit-scene", defaultMessage: "Edit land" })}
             >
               <PenIcon />
             </TileAction>
@@ -248,7 +248,7 @@ export function MediaTile({ entry, processThumbnailUrl, onClick, onEdit, onShowS
             <TileAction
               title={intl.formatMessage({
                 id: "media-tile.action.copy-scene",
-                defaultMessage: "Copy to my scenes"
+                defaultMessage: "Copy to my lands"
               })}
               onClick={onCopy}
             >
@@ -261,7 +261,7 @@ export function MediaTile({ entry, processThumbnailUrl, onClick, onEdit, onShowS
             <TileAction
               title={intl.formatMessage({
                 id: "media-tile.action.room-info",
-                defaultMessage: "Room info"
+                defaultMessage: "Land info"
               })}
               onClick={onInfo}
             >

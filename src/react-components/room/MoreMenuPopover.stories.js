@@ -25,7 +25,7 @@ const menu = [
     label: "You",
     items: [
       { id: "user-profile", label: "Change Name & Avatar", icon: AvatarIcon },
-      { id: "favorite-room", label: "Favorite Room", icon: StarOutlineIcon },
+      { id: "favorite-room", label: "Favorite Land", icon: StarOutlineIcon },
       { id: "preferences", label: "Preferences", icon: SettingsIcon }
     ]
   },
@@ -34,7 +34,7 @@ const menu = [
     label: "Room",
     items: [
       { id: "room-settings", label: "Room Settings", icon: HomeIcon },
-      { id: "change-scene", label: "Change Scene", icon: SceneIcon },
+      { id: "change-scene", label: "Change Land", icon: SceneIcon },
       { id: "camera-mode", label: "Enter Camera Mode", icon: CameraIcon }
     ]
   },

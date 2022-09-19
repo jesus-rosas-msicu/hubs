@@ -138,7 +138,7 @@ export function SceneInfo({ accountId, scene, showAttributions, canChangeScene, 
 export function RoomSidebar({ room, accountId, onClose, canEdit, onEdit, onChangeScene }) {
   return (
     <Sidebar
-      title={<FormattedMessage id="room-sidebar.title" defaultMessage="Room" />}
+      title={<FormattedMessage id="room-sidebar.title" defaultMessage="Land" />}
       beforeTitle={<CloseButton onClick={onClose} />}
       afterTitle={
         canEdit && (

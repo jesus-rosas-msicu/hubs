@@ -248,7 +248,7 @@ export const Favorites = () => (
 
 export const SceneListings = () => (
   <MediaBrowser
-    searchPlaceholder="Search Scenes..."
+    searchPlaceholder="Search Land..."
     mediaSources={mediaSources}
     selectedSource={"scenes"}
     activeFilter={"featured"}
@@ -261,14 +261,14 @@ export const SceneListings = () => (
     }
     hasNext
   >
-    <CreateTile label="Create Scene" type="scene" />
+    <CreateTile label="Create Land" type="scene" />
     <MediaTile entry={sceneListing} />
   </MediaBrowser>
 );
 
 export const Scenes = () => (
   <MediaBrowser
-    searchPlaceholder="Search Scenes..."
+    searchPlaceholder="Search Lands..."
     mediaSources={mediaSources}
     selectedSource={"scenes"}
     activeFilter={"my-scenes"}
@@ -281,7 +281,7 @@ export const Scenes = () => (
     }
     hasNext
   >
-    <CreateTile label="Create Scene" type="scene" />
+    <CreateTile label="Create Land" type="scene" />
     <MediaTile entry={scene} />
     <MediaTile entry={scene} />
     <MediaTile entry={scene} />

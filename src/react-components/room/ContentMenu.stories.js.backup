@@ -14,6 +14,7 @@ export const Base = () => (
   <RoomLayout
     viewport={
       <ContentMenu>
+        <ObjectsMenuButton />
         <PeopleMenuButton />
       </ContentMenu>
     }
@@ -24,6 +25,7 @@ export const Active = () => (
   <RoomLayout
     viewport={
       <ContentMenu>
+        <ObjectsMenuButton active />
         <PeopleMenuButton />
       </ContentMenu>
     }

@@ -12,7 +12,7 @@ export function SceneUrlModal({ enableSpoke, editorName, onValidateUrl, onSubmit
   const { isSubmitting, handleSubmit, register, errors } = useForm();
   return (
     <Modal
-      title={<FormattedMessage id="scene-url-modal.title" defaultMessage="Custom Scene URL" />}
+      title={<FormattedMessage id="scene-url-modal.title" defaultMessage="Custom Land URL" />}
       beforeTitle={<CloseButton onClick={onClose} />}
     >
       <Column as="form" padding center onSubmit={handleSubmit(onSubmit)}>
@@ -60,7 +60,7 @@ export function SceneUrlModal({ enableSpoke, editorName, onValidateUrl, onSubmit
           error={errors.url && errors.url.message}
         />
         <Button type="submit" preset="accept" disabled={isSubmitting}>
-          <FormattedMessage id="scene-url-modal.change-scene-button" defaultMessage="Change Scene" />
+          <FormattedMessage id="scene-url-modal.change-scene-button" defaultMessage="Change Land" />
         </Button>
         {enableSpoke && (
           <>

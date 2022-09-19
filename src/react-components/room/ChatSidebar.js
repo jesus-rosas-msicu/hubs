@@ -140,13 +140,13 @@ ChatInput.propTypes = {
 };
 
 const enteredMessages = defineMessages({
-  room: { id: "chat-sidebar.system-message.entered-room", defaultMessage: "{name} entered the room." },
+  room: { id: "chat-sidebar.system-message.entered-room", defaultMessage: "{name} entered the land." },
   lobby: { id: "chat-sidebar.system-message.entered-lobby", defaultMessage: "{name} entered the lobby." }
 });
 
 const joinedMessages = defineMessages({
   lobby: { id: "chat-sidebar.system-message.joined-lobby", defaultMessage: "{name} joined the lobby." },
-  room: { id: "chat-sidebar.system-message.joined-room", defaultMessage: "{name} joined the room." }
+  room: { id: "chat-sidebar.system-message.joined-room", defaultMessage: "{name} joined the land." }
 });
 
 export const LogMessageType = {
@@ -176,7 +176,7 @@ export const LogMessageType = {
 const logMessages = defineMessages({
   [LogMessageType.roomEntryRequired]: {
     id: "chat-sidebar.log-message.room-entry-required",
-    defaultMessage: "You must enter the room to use this command."
+    defaultMessage: "You must enter the land to use this command."
   },
   [LogMessageType.flyModeDisabled]: {
     id: "chat-sidebar.log-message.fly-mode-disabled",
@@ -188,7 +188,7 @@ const logMessages = defineMessages({
   },
   [LogMessageType.unauthorizedSceneChange]: {
     id: "chat-sidebar.log-message.unauthorized-scene-change",
-    defaultMessage: "You do not have permission to change the scene."
+    defaultMessage: "You do not have permission to change the land."
   },
   [LogMessageType.invalidSceneUrl]: {
     id: "chat-sidebar.log-message.invalid-scene-url",
@@ -196,7 +196,7 @@ const logMessages = defineMessages({
   },
   [LogMessageType.unauthorizedRoomRename]: {
     id: "chat-sidebar.log-message.unauthorized-room-rename",
-    defaultMessage: "You do not have permission to rename this room."
+    defaultMessage: "You do not have permission to rename this land."
   },
   [LogMessageType.captureUnavailable]: {
     id: "chat-sidebar.log-message.capture-unavailable",
@@ -253,7 +253,7 @@ const logMessages = defineMessages({
   },
   [LogMessageType.joinFailed]: {
     id: "chat-sidebar.log-message.join-failed",
-    defaultMessage: "Failed to join room: {message}"
+    defaultMessage: "Failed to join land: {message}"
   },
   [LogMessageType.avatarChanged]: {
     id: "chat-sidebar.log-message.avatar-changed",
@@ -288,7 +288,7 @@ export function formatSystemMessage(entry, intl) {
       return (
         <FormattedMessage
           id="chat-sidebar.system-message.scene-change"
-          defaultMessage="{name} changed the scene to {sceneName}"
+          defaultMessage="{name} changed the land to {sceneName}"
           values={{ name: <b>{entry.name}</b>, sceneName: <b>{entry.sceneName}</b> }}
         />
       );
@@ -296,7 +296,7 @@ export function formatSystemMessage(entry, intl) {
       return (
         <FormattedMessage
           id="chat-sidebar.system-message.hub-name-change"
-          defaultMessage="{name} changed the name of the room to {hubName}"
+          defaultMessage="{name} changed the name of the land to {hubName}"
           values={{ name: <b>{entry.name}</b>, hubName: <b>{entry.hubName}</b> }}
         />
       );

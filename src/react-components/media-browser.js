@@ -98,7 +98,7 @@ const customObjectMessages = defineMessages({
   },
   scene: {
     id: "media-browser.add_custom_scene",
-    defaultMessage: "Custom Scene"
+    defaultMessage: "Custom land"
   },
   avatar: {
     id: "media-browser.add_custom_avatar",

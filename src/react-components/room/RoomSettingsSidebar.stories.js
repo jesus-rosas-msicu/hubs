@@ -11,8 +11,8 @@ export default {
 };
 
 const room = {
-  name: "Room Name",
-  description: "Room Description",
+  name: "Land Name",
+  description: "Land Description",
   scene: {
     name: "Scene Name",
     account_id: "123",

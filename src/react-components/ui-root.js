@@ -1123,7 +1123,7 @@ class UIRoot extends Component {
               },
           canCreateRoom && {
             id: "create-room",
-            label: <FormattedMessage id="more-menu.create-room" defaultMessage="Create Room" />,
+            label: <FormattedMessage id="more-menu.create-room" defaultMessage="Create Land" />,
             icon: AddIcon,
             onClick: () =>
               this.showNonHistoriedDialog(LeaveRoomModal, {
@@ -1139,7 +1139,7 @@ class UIRoot extends Component {
           },
           {
             id: "favorite-rooms",
-            label: <FormattedMessage id="more-menu.favorite-rooms" defaultMessage="Favorite Rooms" />,
+            label: <FormattedMessage id="more-menu.favorite-rooms" defaultMessage="Favorite Land" />,
             icon: FavoritesIcon,
             onClick: () =>
               this.props.performConditionalSignIn(
@@ -1161,11 +1161,11 @@ class UIRoot extends Component {
       },
       {
         id: "room",
-        label: <FormattedMessage id="more-menu.room" defaultMessage="Room" />,
+        label: <FormattedMessage id="more-menu.room" defaultMessage="Land" />,
         items: [
           {
             id: "room-info",
-            label: <FormattedMessage id="more-menu.room-info" defaultMessage="Room Info and Settings" />,
+            label: <FormattedMessage id="more-menu.room-info" defaultMessage="Land Info and Settings" />,
             icon: HomeIcon,
             onClick: () => this.setSidebar("room-info")
           },
@@ -1179,13 +1179,13 @@ class UIRoot extends Component {
           this.isFavorited()
             ? {
                 id: "unfavorite-room",
-                label: <FormattedMessage id="more-menu.unfavorite-room" defaultMessage="Unfavorite Room" />,
+                label: <FormattedMessage id="more-menu.unfavorite-room" defaultMessage="Unfavorite Land" />,
                 icon: StarIcon,
                 onClick: () => this.toggleFavorited()
               }
             : {
                 id: "favorite-room",
-                label: <FormattedMessage id="more-menu.favorite-room" defaultMessage="Favorite Room" />,
+                label: <FormattedMessage id="more-menu.favorite-room" defaultMessage="Favorite Land" />,
                 icon: StarOutlineIcon,
                 onClick: () => this.toggleFavorited()
               },
@@ -1214,7 +1214,7 @@ class UIRoot extends Component {
             },
           canCloseRoom && {
             id: "close-room",
-            label: <FormattedMessage id="more-menu.close-room" defaultMessage="Close Room" />,
+            label: <FormattedMessage id="more-menu.close-room" defaultMessage="Close Land" />,
             icon: DeleteIcon,
             onClick: () =>
               this.props.performConditionalSignIn(
@@ -1535,7 +1535,7 @@ class UIRoot extends Component {
                       <>
                         <ToolbarButton
                           icon={<EnterIcon />}
-                          label={<FormattedMessage id="toolbar.join-room-button" defaultMessage="Join Room" />}
+                          label={<FormattedMessage id="toolbar.join-room-button" defaultMessage="Join Land" />}
                           preset="accept"
                           onClick={() => this.setState({ watching: false })}
                         />

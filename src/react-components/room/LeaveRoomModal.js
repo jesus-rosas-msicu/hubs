@@ -15,30 +15,30 @@ export const LeaveReason = {
 const reasonMessages = defineMessages({
   [LeaveReason.leaveRoom]: {
     id: "leave-room-modal.leave-room.message",
-    defaultMessage: "Are you sure you want to leave the room?"
+    defaultMessage: "Are you sure you want to leave this land?"
   },
   [LeaveReason.joinRoom]: {
     id: "leave-room-modal.join-room.message",
-    defaultMessage: "Joining a new room will leave this one. Are you sure?"
+    defaultMessage: "Joining a new land will leave this one. Are you sure?"
   },
   [LeaveReason.createRoom]: {
     id: "leave-room-modal.create-room.message",
-    defaultMessage: "Creating a new room will leave this one. Are you sure?"
+    defaultMessage: "Creating a new land will leave this one. Are you sure?"
   }
 });
 
 const confirmationMessages = defineMessages({
   [LeaveReason.leaveRoom]: {
     id: "leave-room-modal.leave-room.confirm",
-    defaultMessage: "Leave Room"
+    defaultMessage: "Leave Land"
   },
   [LeaveReason.joinRoom]: {
     id: "leave-room-modal.join-room.confirm",
-    defaultMessage: "Join Room"
+    defaultMessage: "Join Land"
   },
   [LeaveReason.createRoom]: {
     id: "leave-room-modal.create-room.confirm",
-    defaultMessage: "Leave and Create Room"
+    defaultMessage: "Leave and Join Land"
   }
 });
 
@@ -47,7 +47,7 @@ export function LeaveRoomModal({ reason, destinationUrl, onClose }) {
 
   return (
     <Modal
-      title={<FormattedMessage id="leave-room-modal.title" defaultMessage="Leave Room" />}
+      title={<FormattedMessage id="leave-room-modal.title" defaultMessage="Leave land" />}
       beforeTitle={<CloseButton onClick={onClose} />}
     >
       <Column padding center centerMd="both" grow>

@@ -51,7 +51,7 @@ export function RoomSettingsSidebar({
 
   return (
     <Sidebar
-      title={<FormattedMessage id="room-settings-sidebar.title" defaultMessage="Room Settings" />}
+      title={<FormattedMessage id="room-settings-sidebar.title" defaultMessage="Land Settings" />}
       beforeTitle={showBackButton ? <BackButton onClick={onClose} /> : <CloseButton onClick={onClose} />}
     >
       <Column padding as="form" onSubmit={handleSubmit(onSubmit)}>
@@ -72,7 +72,7 @@ export function RoomSettingsSidebar({
           })}
           minLength={1}
           maxLength={64}
-          label={<FormattedMessage id="room-settings-sidebar.name" defaultMessage="Room Name" />}
+          label={<FormattedMessage id="room-settings-sidebar.name" defaultMessage="Land Name" />}
           ref={register}
           error={errors.name}
           fullWidth
@@ -84,7 +84,7 @@ export function RoomSettingsSidebar({
             id: "room-settings-sidebar.description-placeholder",
             defaultMessage: "Room Description"
           })}
-          label={<FormattedMessage id="room-settings-sidebar.description" defaultMessage="Room Description" />}
+          label={<FormattedMessage id="room-settings-sidebar.description" defaultMessage="Land Description" />}
           minRows={3}
           ref={register}
           error={errors.description}
@@ -99,13 +99,13 @@ export function RoomSettingsSidebar({
             id: "room-settings-sidebar.room-size-placeholder",
             defaultMessage: "Member Limit"
           })}
-          label={<FormattedMessage id="room-settings-sidebar.room-size" defaultMessage="Room Size" />}
+          label={<FormattedMessage id="room-settings-sidebar.room-size" defaultMessage="Land Size" />}
           ref={register}
           error={errors.room_size}
           fullWidth
         />
         <RadioInputField
-          label={<FormattedMessage id="room-settings-sidebar.room-access" defaultMessage="Room Access" />}
+          label={<FormattedMessage id="room-settings-sidebar.room-access" defaultMessage="Land Access" />}
           fullWidth
         >
           <RadioInputOption
@@ -152,7 +152,7 @@ export function RoomSettingsSidebar({
           />
         )}
         <InputField
-          label={<FormattedMessage id="room-settings-sidebar.permissions" defaultMessage="Room Member Permissions" />}
+          label={<FormattedMessage id="room-settings-sidebar.permissions" defaultMessage="Land Permissions" />}
           fullWidth
         >
           <div className={styles.roomPermissions}>

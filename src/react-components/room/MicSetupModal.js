@@ -81,7 +81,7 @@ export function MicSetupModal({
                       <Column className={styles.popoverContent}>
                         <FormattedMessage
                           id="mic-setup-modal.mute-mic-info"
-                          defaultMessage="You can mute anytime after you enter the room"
+                          defaultMessage="You can mute anytime after you enter the land"
                         />
                       </Column>
                     }
@@ -166,7 +166,7 @@ export function MicSetupModal({
           </div>
         </div>
         <Button preset="primary" onClick={onEnterRoom}>
-          <FormattedMessage id="mic-setup-modal.enter-room-button" defaultMessage="Enter Room" />
+          <FormattedMessage id="mic-setup-modal.enter-room-button" defaultMessage="Enter land" />
         </Button>
       </Column>
     </Modal>

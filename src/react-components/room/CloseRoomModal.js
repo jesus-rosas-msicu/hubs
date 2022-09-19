@@ -31,29 +31,29 @@ export function CloseRoomModal({ roomName, onClose, onConfirm }) {
         <p>
           <FormattedMessage
             id="close-room-modal.message"
-            defaultMessage="Closing this room will remove yourself and others from the room, shutting it down permanently.{linebreak}Are you sure? This action cannot be undone."
+            defaultMessage="Closing this land will remove yourself and others from the land, shutting it down permanently.{linebreak}Are you sure? This action cannot be undone."
             values={{ linebreak: <br /> }}
           />
         </p>
         <p>
           <FormattedMessage
             id="close-room-modal.type-to-confirm"
-            defaultMessage="Type room name to confirm: {roomName}"
+            defaultMessage="Type land name to confirm: {roomName}"
             values={{ roomName: <b>{roomName}</b> }}
           />
         </p>
         <TextInputField
-          label={<FormattedMessage id="close-room-modal.confirm-room-name-field" defaultMessage="Confirm Room Name" />}
+          label={<FormattedMessage id="close-room-modal.confirm-room-name-field" defaultMessage="Confirm Land Name" />}
           onChange={e => setConfirmText(e.target.value)}
           value={confirmText}
           error={
             showIsNotMatchError && (
-              <FormattedMessage id="close-room-modal.room-name-match-error" defaultMessage="Room name does not match" />
+              <FormattedMessage id="close-room-modal.room-name-match-error" defaultMessage="Land name does not match" />
             )
           }
         />
         <Button preset="accept" onClick={onClickConfirm}>
-          <FormattedMessage id="close-room-modal.confirm" defaultMessage="Yes, Close Room" />
+          <FormattedMessage id="close-room-modal.confirm" defaultMessage="Yes, Close land" />
         </Button>
         <CancelButton onClick={onClose} />
       </Column>

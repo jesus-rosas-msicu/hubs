@@ -12,7 +12,7 @@ import "./assets/stylesheets/globals.scss";
 import { Center } from "./react-components/layout/Center";
 import { ThemeProvider } from "./react-components/styles/theme";
 
-registerTelemetry("/signin", "Hubs Sign In Page");
+registerTelemetry("/signin", "Polywinx Sign In Page");
 
 const store = new Store();
 window.APP = { store };
